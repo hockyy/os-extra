@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  
+  <div class="container">
+    <div class="header-container">
+      <img src="{{ site.baseurl }}/assets/images/hocky.jpg" alt="hocky" style="width:130px; border-radius:50%">
+      <h1 style="margin:0; padding:0;">{{ site.title | escape }}</h1>
+      <h2 style="margin:0; padding:0;">
+        Written by {% if page.author %}{{ page.author | escape }} {% else %}{{ site.author | escape }}{% endif %} in {% if page.address %}{{ page.address | escape }} {% else %}{{ site.address | escape }}{% endif %}
+      </h2>
+    </div>
+    {% include navbar.html %}
+    <div class="markdown-section-container">
+      <div class="markdown-body">
+        {{ content }}
+      </div>
+
+    </div>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </div>
+</body>
+
+</html>

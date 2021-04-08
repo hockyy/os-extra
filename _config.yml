@@ -1,0 +1,15 @@
+# Stolen from cbkadal's repo
+
+title:       "Operating Systems 2021-1 (OS-Extra)"
+description: "Hello there!"
+author:           "Hocky Yudhiono"
+address:          "Pontianak"
+sitemap:          "true"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+urlweb:           "https://jekyll.my.id/"
+urlgithub:        "https://github.com/hockyy/os-extra/"
+urlghpage:        "https://hockyy.github.io/os-extra/"
+keywords:         "jekyll, testing"
+github:           [metadata]
